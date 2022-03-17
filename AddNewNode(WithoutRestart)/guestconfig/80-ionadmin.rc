@@ -1,0 +1,9 @@
+## begin ionadmin 
+a contact +1 +360000 80 88 100000
+a contact +1 +360000 88 80 100000
+
+a range +1 +360000 80 88 1
+a range +1 +360000 88 80 1
+
+
+## end ionadmin 

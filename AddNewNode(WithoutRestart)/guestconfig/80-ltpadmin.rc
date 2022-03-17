@@ -1,0 +1,5 @@
+## begin ltpadmin 
+
+a span 80 10 10 1400 10000 1 'udplso 209.124.69.227:1113'
+s
+## end ltpadmin 

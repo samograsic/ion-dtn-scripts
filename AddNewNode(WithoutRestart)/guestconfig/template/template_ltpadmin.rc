@@ -1,0 +1,5 @@
+## begin ltpadmin 
+
+a span NNN 10 10 1400 10000 1 'udplso XXX:1113'
+s
+## end ltpadmin 

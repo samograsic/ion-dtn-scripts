@@ -1,0 +1,50 @@
+## begin ionadmin 
+1 88 ''
+s
+
+a contact +1 +360000 80 80 100000
+a contact +1 +360000 80 88 100000
+a contact +1 +360000 88 80 100000
+a contact +1 +360000 88 88 100000
+
+a range +1 +360000 80 80 1
+a range +1 +360000 80 88 1
+a range +1 +360000 88 88 1
+
+m production 1000000
+m consumption 1000000
+## end ionadmin 
+
+## begin ltpadmin 
+1 32
+
+a span 80 10 10 1400 10000 1 'udplso 209.124.69.227:1113'
+a span 88 10 10 1400 10000 1 'udplso 81.229.57.44:1113'
+s 'udplsi 192.168.0.10:1113'
+## end ltpadmin 
+
+## begin bpadmin 
+1
+a scheme ipn 'ipnfw' 'ipnadminep'
+
+a endpoint ipn:88.0 q
+a endpoint ipn:88.1 q
+a endpoint ipn:88.2 q
+a endpoint ipn:88.3 q
+
+a protocol ltp 1400 100
+a induct ltp 88 ltpcli
+a outduct ltp 88 ltpclo
+a outduct ltp 80 ltpclo
+
+s
+## end bpadmin 
+
+## begin ipnadmin 
+a plan 80 ltp/80
+a plan 88 ltp/88
+## end ipnadmin
+
+## begin ionsecadmin
+1
+## end ionsecadmin

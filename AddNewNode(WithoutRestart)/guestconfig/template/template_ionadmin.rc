@@ -1,0 +1,9 @@
+## begin ionadmin 
+a contact +1 +360000 NNN 88 100000
+a contact +1 +360000 88 NNN 100000
+
+a range +1 +360000 NNN 88 1
+a range +1 +360000 88 NNN 1
+
+
+## end ionadmin 
